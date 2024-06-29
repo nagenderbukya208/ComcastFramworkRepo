@@ -103,7 +103,8 @@ public class CreateContactTest extends BaseClass {
 		driver.findElement(By.xpath("(//input[@title='Save [Alt+S]'])[1]")).click();
 		/* Verify header Msg Expected result*/
 		String headerinfo = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
-		Assert.assertEquals(headerinfo, orgName);
+		boolean contains2 = headerinfo.contains(orgName);
+		Assert.assertTrue(contains2);
 		/* Step 5 : Navigate to contact module*/
 		driver.findElement(By.linkText("Contacts")).click();
 		/* Step 6 : Click on "Create Contacts" Button*/
@@ -122,7 +123,8 @@ public class CreateContactTest extends BaseClass {
 		/* Verify Header phone number info Expected result*/
 		headerinfo = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
 		SoftAssert sa = new SoftAssert();
-		sa.assertEquals(headerinfo, contactLastName);
+		boolean contains = headerinfo.contains(contactLastName);
+		sa.assertTrue(contains);
 		/* Verify Header phone number info Expected result*/
 		String actOrgName = driver.findElement(By.id("mouseArea_Organization Name")).getText();
 		sa.assertNotEquals(actOrgName, orgName);

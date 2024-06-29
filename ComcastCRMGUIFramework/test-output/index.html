@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--781725744\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1960706317\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.comcast.crm.orgtest.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrgTest">createOrgTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.comcast.crm.orgtest.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrgWithIndustry">createOrgWithIndustry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.comcast.crm.orgtest.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrgWithPh">createOrgWithPh</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,12 +141,26 @@
                   <span class="method-name">createOrgTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrgWithIndustry">
+                  </a> <!-- createOrgWithIndustry -->
+                  <span class="method-name">createOrgWithIndustry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrgWithPh">
+                  </a> <!-- createOrgWithPh -->
+                  <span class="method-name">createOrgWithPh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--781725744\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse-1960706317\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +169,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.comcast.crm.orgtest.CreateOrganizationTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;createOrgTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.comcast.crm.orgtest.CreateOrganizationTest --&gt;
+      &lt;class name=&quot;com.comcast.crm.orgtest.CreateOrganizationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -174,6 +194,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">regressionTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createOrgWithIndustry</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createOrgWithPh</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">smokeTest</span>
               <br/>
               <div class="method-in-group">
@@ -197,16 +229,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createOrgTest')
+data.setCell(0, 1, 'createOrgWithPh')
 data.setCell(0, 2, 'com.comcast.crm.orgtest.CreateOrganizationTest')
-data.setCell(0, 3, 455661);
+data.setCell(0, 3, 10326);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createOrgTest')
+data.setCell(1, 2, 'com.comcast.crm.orgtest.CreateOrganizationTest')
+data.setCell(1, 3, 8934);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createOrgWithIndustry')
+data.setCell(2, 2, 'com.comcast.crm.orgtest.CreateOrganizationTest')
+data.setCell(2, 3, 8899);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,18 +261,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.comcast.crm.orgtest.CreateOrganizationTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">createOrgWithPh</span>
-                <br/>
-                <span class="ignored-method-name">createOrgWithIndustry</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -248,27 +279,51 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">configBC</span>
-                <span class="method-start">119554 ms</span>
+                <span class="method-start">358 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">configBM</span>
-                <span class="method-start">243236 ms</span>
+                <span class="method-start">2323 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createOrgTest</span>
-                <span class="method-start">256303 ms</span>
+                <span class="method-start">6738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">configAM</span>
-                <span class="method-start">711968 ms</span>
+                <span class="method-start">15677 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">17108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrgWithIndustry</span>
+                <span class="method-start">19422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">28324 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">configBM</span>
+                <span class="method-start">29669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrgWithPh</span>
+                <span class="method-start">32417 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">configAM</span>
+                <span class="method-start">42748 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">configAC</span>
-                <span class="method-start">736796 ms</span>
+                <span class="method-start">44474 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">configAS</span>
-                <span class="method-start">782894 ms</span>
+                <span class="method-start">44801 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
